@@ -14,32 +14,32 @@ describe('helloWorld', function() {
     });
 });
 
-describe("addOne", function (){
+describe("sayHello", function (){
     it('should be a defined function', function () {
-        expect(typeof addOne).toBe("function");
+        expect (typeof sayHello).toBe("function");
     });
-    it('should return a number when called', function () {
-        expect(typeof addOne()).toBe("number");
+    it('should return a string when called', function () {
+        expect(typeof sayHello()).toBe("string");
     });
-    it('should return the number 3 when passed the argument of the number 2', function () {
-        expect(addOne(2)).toBe(3);
-    });
-    it('should return the number -43 when passed the argument of the num -44', function () {
-        expect(addOne(-44)).toBe(-43);
-    });
-    it('should return the number -2.14 when passed the argument of the number -3.14', function () {
-        expect(addOne(-3.14)).toBe(-2.14);
-    });
-    it('should return the number -43 when passed the argument of the num -44', function () {
-        expect(addOne(33)).toBe(34);
-    });
-    it("should return NaN when passed the string 'Hakeem Olajuwon.'", function () {
-        expect(isNaN(addOne('Hakeem Olajuwon'))).toBe(true);
-    });
-    it("should return NaN when passed the boolean of true", function () {
-        expect(isNaN(addOne(true))).toBe(true);
-    });
-    it("should return NaN when passed the array [1, 2, 3]", function () {
-        expect(Number.isNaN(addOne([1, 2, 3]))).toBe(true);
-    });
+    // it('should return the number 3 when passed the argument of the number 2', function () {
+    //     expect(sayHello(2)).toBe(3);
+    // });
+    // it('should return the number -43 when passed the argument of the num -44', function () {
+    //     expect(sayHello(-44)).toBe(-43);
+    // });
+    // it('should return the number -2.14 when passed the argument of the number -3.14', function () {
+    //     expect(sayHello(-3.14)).toBe(-2.14);
+    // });
+    // it('should return the number -43 when passed the argument of the num -44', function () {
+    //     expect(sayHello(33)).toBe(34);
+    // });
+    // it("should return NaN when passed the string 'Hakeem Olajuwon.'", function () {
+    //     expect(isNaN(sayHello('Hakeem Olajuwon'))).toBe(true);
+    // });
+    // it("should return NaN when passed the boolean of true", function () {
+    //     expect(isNaN(sayHello(true))).toBe(NaN);
+    // });
+    // it("should return NaN when passed the array [1, 2, 3]", function () {
+    //     expect(Number.isNaN(sayHello([1, 2, 3]))).toBe(true);
+    // });
 });
