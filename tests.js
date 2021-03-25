@@ -39,6 +39,7 @@ describe("sayHello", function (){
     it('should return "Hello, World!" when passed the argument of boolean false', function () {
         expect(sayHello(false)).toBe("Hello, World!");
     });
+});
     // it('should return the number -43 when passed the argument of the num -44', function () {
     //     expect(sayHello(33)).toBe(34);
     // });
@@ -51,4 +52,17 @@ describe("sayHello", function (){
     // it("should return NaN when passed the array [1, 2, 3]", function () {
     //     expect(Number.isNaN(sayHello([1, 2, 3]))).toBe(true);
     // });
+describe("isFive", function () {
+    it('should be a defined function', function () {
+        expect(typeof isFive).toBe("function");
+    });
+    it('should return a boolean no matter the input type', function () {
+        expect(typeof isFive()).toBe("boolean");
+    });
+    it('should return boolean true when passed the number 5 as an argument', function () {
+        expect(isFive(5)).toBe(true);
+    });
+    it('should return boolean false when passed string of "5" as an argument', function () {
+        expect(isFive("5")).toBe(false);
+    });
 });
