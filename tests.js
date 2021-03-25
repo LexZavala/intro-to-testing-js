@@ -30,9 +30,15 @@ describe("sayHello", function (){
     it('should return "Hello, Pat!" when passed Pat as an argument', function () {
         expect(sayHello('Pat')).toBe('Hello, Pat!');
     });
-    // it('should return the number -2.14 when passed the argument of the number -3.14', function () {
-    //     expect(sayHello(-3.14)).toBe(-2.14);
-    // });
+    it('should return "Hello, World!" when passed the argument of no input', function () {
+        expect(sayHello()).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" when passed the argument of boolean true', function () {
+        expect(sayHello(true)).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" when passed the argument of boolean false', function () {
+        expect(sayHello(false)).toBe("Hello, World!");
+    });
     // it('should return the number -43 when passed the argument of the num -44', function () {
     //     expect(sayHello(33)).toBe(34);
     // });
