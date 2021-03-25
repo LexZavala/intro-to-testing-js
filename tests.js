@@ -66,3 +66,14 @@ describe("isFive", function () {
         expect(isFive("5")).toBe(false);
     });
 });
+describe("isEven", function () {
+    it('should be a defined function', function () {
+        expect(typeof isEven).toBe("function");
+    });
+    it('should return a boolean no matter the input', function () {
+        expect(typeof isEven()).toBe("boolean");
+    });
+    it('should return true when passing the number 2 as an argument', function () {
+        expect(isEven(2)).toBe(true);
+    });
+});
