@@ -18,6 +18,10 @@ function isFive(input){
 }
 
 // isEven function
-function isEven(){
-    return true;
+function isEven(num){
+    if (parseFloat(num) % 2 == 0) {
+        return true;
+    }else{
+        return false;
+    }
 }
