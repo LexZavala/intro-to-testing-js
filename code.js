@@ -25,3 +25,12 @@ function isEven(num){
         return false;
     }
 }
+
+// isVowel function
+function isVowel(vowel){
+    if (vowel.toLowerCase() === "a"){
+        return true;
+    }else{
+        return false;
+    }
+}
