@@ -28,9 +28,24 @@ function isEven(num){
 
 // isVowel function
 function isVowel(vowel){
-    if (vowel.toLowerCase() === "a"){
-        return true;
-    }else{
+    if (typeof vowel === "number"){
         return false;
+    }else if (vowel === "a" || vowel === "A") {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// Add function
+function add(x,y) {
+    var firstNum = parseFloat(x);
+    var secondNum = parseFloat(y);
+    var totalAdd = firstNum + secondNum;
+    var notANumber = x + y;
+    if (isNaN(notANumber) === true) {
+        return true;
+    } else {
+        return totalAdd;
     }
 }
