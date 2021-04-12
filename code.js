@@ -43,8 +43,8 @@ function add(x,y) {
     var secondNum = parseFloat(y);
     var totalAdd = firstNum + secondNum;
     var notANumber = x + y;
-    if (isNaN(notANumber) === true) {
-        return true;
+    if (isNaN(firstNum) || isNaN(secondNum) === true) {
+        return NaN;
     } else {
         return totalAdd;
     }
