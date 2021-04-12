@@ -144,12 +144,12 @@ describe("add", function () {
         expect(add("-4", "10")).toBe(6);
     });
     it('should return NaN when passed string of "banana" and "split" as arguments', function () {
-        expect(add("banana", "split")).toBe(NaN);
+        expect(Number.isNaN(add("banana", "split"))).toBe(true);
     });
     it('should return NaN when passed 2 and "apples" as arguments', function () {
-        expect(add(2, "apples")).toBe(NaN);
+        expect(Number.isNaN(add(2, "apples"))).toBe(true);
     });
     it('should return NaN when passed no parameters', function () {
-        expect(add()).toBe(NaN);
+        expect(Number.isNaN(add())).toBe(true);
     });
 });

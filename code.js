@@ -39,13 +39,5 @@ function isVowel(vowel){
 
 // Add function
 function add(x,y) {
-    var firstNum = parseFloat(x);
-    var secondNum = parseFloat(y);
-    var totalAdd = firstNum + secondNum;
-    var notANumber = x + y;
-    if (isNaN(firstNum) || isNaN(secondNum) === true) {
-        return NaN;
-    } else {
-        return totalAdd;
-    }
+   return parseFloat(x) + parseFloat(y);
 }
